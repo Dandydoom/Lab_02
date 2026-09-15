@@ -1,7 +1,6 @@
 import org.junit.jupiter.api.BeforeEach;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.testng.AssertJUnit.assertEquals;
 
 /**
  * WorkerTest.java
@@ -12,7 +11,6 @@ import static org.testng.AssertJUnit.assertEquals;
  * @author Kirby Fortney
  */
 class WorkerTest
-
 {
     private Worker worker;
 
