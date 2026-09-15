@@ -16,16 +16,18 @@ public class InheritanceDemo
     {
         ArrayList<Worker> workers = new ArrayList<>();
 
-        // Three hourly Workers, with reasonable hourly rates
-        workers.add(new Worker("100001", "Sam",   "Wilson",  "Mr.", 1990, 18.50));
-        workers.add(new Worker("100002", "Priya", "Nair",    "Ms.", 1995, 22.00));
-        workers.add(new Worker("100003", "Diego", "Alvarez", "Mr.", 1988, 20.75));
+        // Three hourly Workers. Rates are round numbers so weekly pay comes
+        // out clean: $20/hr, $25/hr, and $15/hr.
+        workers.add(new Worker("100001", "Fred",  "Flintstone", "Mr.", 1990, 20.00));
+        workers.add(new Worker("100002", "Bugs",  "Bunny",      "Mr.", 1995, 25.00));
+        workers.add(new Worker("100003", "Daffy", "Duck",       "Mr.", 1988, 15.00));
 
-        // Three salaried SalaryWorkers, with reasonable annual salaries.
+        // Three salaried SalaryWorkers. Salaries are chosen so annualSalary / 52
+        // comes out to a round weekly number: $1000/wk, $1500/wk, $1200/wk.
         // SalaryWorker IS-A Worker, so it goes into the same ArrayList<Worker>.
-        workers.add(new SalaryWorker("200001", "Alex",   "Rivera", "Ms.", 1988, 52000.00));
-        workers.add(new SalaryWorker("200002", "Morgan", "Chen",   "Dr.", 1979, 78000.00));
-        workers.add(new SalaryWorker("200003", "Jordan", "Patel",  "Mr.", 1992, 61000.00));
+        workers.add(new SalaryWorker("200001", "Homer",  "Simpson", "Mr.", 1988, 52000.00));
+        workers.add(new SalaryWorker("200002", "Scooby", "Doo",     "Mr.", 1979, 78000.00));
+        workers.add(new SalaryWorker("200003", "Mickey", "Mouse",   "Mr.", 1992, 62400.00));
 
         // Week 1: normal 40-hour week. Week 2: crunch time, everyone works 50.
         // Week 3: back to a normal 40-hour week.
